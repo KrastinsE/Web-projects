@@ -1,6 +1,8 @@
 ## Currently in developement, only about 50% done.
 ### Web application with responsive design.
 
+![github-small](https://i.imgur.com/kKcFSTd.jpg)
+
 #### Built by using:
 ```
 - HTML
