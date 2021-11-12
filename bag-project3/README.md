@@ -5,6 +5,8 @@
 ```
 - HTML
 - CSS
+- Javascript (planned)
+- PHP (planned)
 ```
 ### 1. Just clone the repo 
 ```
