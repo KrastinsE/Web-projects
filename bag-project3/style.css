@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.content {
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  }
+
+section#home {
+  background-color: #fff;
+  color: #fff;
+}
+
+section#bag {
+  background-color: #ffc8b0;
+  color: #000;
+}
+
+section#small {
+  background-color: #fff;
+  color: #000;
+}
+
+section#bigsmall {
+  background-color: #ffc8b0;
+  color: #000;
+}
+
+section#contacts {
+  background-color: #555555;
+  height: 70vh;
+  color: #fff;
+}
+
+section#copyrights {
+  background-color: #fff;
+  height: 12vh;
+  color: #000;
+}
+
+/* NAVBAR */
+
+.navbar {
+  top: 0;
+  width: 100%;
+  height: 65px;
+  margin-top: 4px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffafa;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+  width: 100%;
+  display: flex; 
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar li {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 27px;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 0.7rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.navbar ul li a:hover {
+  color: #ffc8b0;
+  border-bottom: 1px solid #000;
+  transition: 0.5s ease;
+}
+
+/* CONTENT */
+
+.pouchp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(images/pouch.png) no-repeat center / cover ;
+}
+
+.pouchp h1 {
+  padding: 50px;
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.pouchp p {
+  margin: 20px 0;
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.pouchp2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(images/pouch2.png) no-repeat center / cover ;
+}
+
+.left, .bag, .smallbag, .bigsmall {
+  width: 35%;
+  height: 560px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.bag {
+  width: 100%;
+  background: url(images/bag.png) no-repeat center / cover ;
+}
+
+.smallbag {
+  width: 100%;
+  background: url(images/smallbag.png) no-repeat center / cover ;
+}
+
+.bigsmall {
+  width: 100%;
+  background: url(images/bigsmall.png) no-repeat center / cover ;
+}
+
+.right {
+  width: 25%;
+  min-height: 400px;
+  background-color: #fceee8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  margin-left: -50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.right h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: 'Comfortaa', cursive;
+}
+
+.right p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 25px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #ffc8b0;
+  padding: 10px 20px;
+  display: inline-block;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.right a:hover {
+  color: #fff;
+}
+
+.crights p {
+  color: #a8a8a8;
+  font-size: 13px;
+}
+
+/* CONTACT FORM */
+
+form {
+  background: transparent;
+  width: 50%;
+  min-height: 400px;
+  margin: 50px auto;
+  border-radius: 8px;
+  padding: 55px 30px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+form .title h2 {
+  font-size: 40px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-weight: lighter;
+  display: inline-block;
+}
+
+form .half {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+  width: 48%;
+  font-family: 'Urbanist', sans-serif;
+}
+
+form label {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 3.5px;
+  margin-bottom: 5px;
+}
+
+form .half .item input {
+  border-radius: 8px;
+  border: 1px solid #ffc8b0; 
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+  color: white;
+}
+
+form .full {
+  margin-bottom: 24px;
+  font-family: 'Urbanist', sans-serif;
+  color: white;
+}
+
+form .full textarea {
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid #ffc8b0;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 100px;
+  font-size: 17px;
+  color: white;
+}
+
+form .action {
+  margin-bottom: 32px;
+}
+
+form .action input {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-family: 'Urbanist', sans-serif;
+}
+
+form .action input[type="submit"] {
+  background: #ffc8b0;
+  color: black;
+}
+
+form .action input[type="submit"]:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1210px) {
+
+}
+
+@media only screen and (max-width: 884px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
