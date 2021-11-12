@@ -1,6 +1,6 @@
 ### Web application with responsive design.
 
-![github-small](https://i.imgur.com/KT0n9H6.jpg)
+![github-small](https://i.imgur.com/JDXlnT4.jpg)
 
 #### Built by using:
 ```
