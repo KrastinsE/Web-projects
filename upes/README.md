@@ -1,5 +1,7 @@
 ### Web application with responsive design.
 
+![github-small](https://i.imgur.com/KT0n9H6.jpg)
+
 #### Built by using:
 ```
 - HTML
